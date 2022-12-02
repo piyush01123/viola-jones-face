@@ -27,5 +27,5 @@ Weak classifiers are trained for each feature resulting in one [decision stump](
 ### Step 4: AdaBoost
 These weak classifiers are combined using [AdaBoost](https://en.wikipedia.org/wiki/AdaBoost). AdaBoost works through multiple rounds of feature ranking and sample weighting. In first round, all samples have equal weightage and with this weightage we select the best feature. In next round, the misclassified samples from previous round have higher weights. Thus we get a strong classifier from several weak classifiers. In this way we get a feature ranking at the end. 
 
-### Inference
+### Step 5: Inference
 For inference, a cascaded classifier is created using the feature ranking obtained. Thus non-faces are quickly rejected whereas faces go through all the gates and finally return True.
