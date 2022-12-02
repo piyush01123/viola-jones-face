@@ -21,7 +21,7 @@ There are five types of Haar features:
 
 We calculate these at every possible scale ie each feature is used several thousand times. We are going to scan each feature across the image to get the features.
 
-### Step 3: Train weak classifier.
+### Step 3: Train weak classifiers
 Weak classifiers are trained for each feature resulting in one [decision stump](https://en.wikipedia.org/wiki/Decision_stump) per feature. Hence we essentially get a threshold (`float`) and a parity (`bool`, which side is +ve) for each features.
 
 ### Step 4: AdaBoost
