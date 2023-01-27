@@ -8,6 +8,10 @@ This repo is an implementation of Viola Jones face detection framework. This met
 
 Link to paper: https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf
 
+Implementation largely inspired from the article "An Analysis of the Viola-Jones Face Detection Algorithm" by Yi-Qing Wang.
+
+Link: https://www.ipol.im/pub/art/2014/104/article_lr.pdf
+
 ## How it works
 ### Step 1: Calculate integral image
 Integral image allows us to quickly compute the feature values. Here is a demo of an integral image. Basically each pixel contains its own value added with all the cells in its upper left portion of grid
